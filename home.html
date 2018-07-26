@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>Foodmap</h1>
+                <h1 class="font-weight-light">Foodmap</h1>
                 <ul class="reviews__content" id="reviews__content">
                 </ul>
                 <div id="map"></div>
@@ -43,27 +43,34 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="col-6 col-sm-6 col-md-6">
-                    <img id ="sushi" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px" onclick="imageClick('sushi')">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                    <img id ="fast_food" src="assets/img/Second.jpg" alt="fastfood" width="200px" onclick="imageClick('fast_food')">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                    <img id ="mexican_food" src="assets/img/descarga.jpeg" alt="mexicanFood" width="200px" onclick="imageClick('mexican_food')">
-                </div>
-                <div class="col-6 col-sm-6col-md-6 col-lg-4">
-                    <img id ="vegetarian_food" src="assets/img/zi3000-shutterstock-buddha-bowl.jpg" alt="vegetarianFood" width="200px"onclick="imageClick('vegetarian_food')">
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                    <img id ="italian_food" src="assets/img/images.jpeg" alt="italianFood" width="200px" onclick="imageClick('italian_food')">
+    <section>
+        <div class="row col-center text-center pd-row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-center">
+                <div>
+                    <div class="column">
+                        <h5>Sushi</h5>
+                        <img id="sushi" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px" onclick="imageClick('sushi')">
+                    </div>
+                    <div class="column">
+                        <h5>Comida rápida</h5>
+                        <img id="fast_food" src="assets/img/Second.jpg" alt="fastfood" width="200px" onclick="imageClick('fast_food')">
+                    </div>
+                    <div class="column">
+                        <h5>Mexicana</h5>
+                        <img id="mexican_food" src="assets/img/descarga.jpeg" alt="mexicanFood" width="200px" onclick="imageClick('mexican_food')">
+                    </div>
+                    <div class="column">
+                        <h5>Vegetariana</h5>
+                        <img id="vegetarian_food" src="assets/img/zi3000-shutterstock-buddha-bowl.jpg" alt="vegetarianFood" width="200px" onclick="imageClick('vegetarian_food')">
+                    </div>
+                    <div class="column">
+                        <h5>Italiana</h5>
+                        <img id="italian_food" src="assets/img/images.jpeg" alt="italianFood" width="200px" onclick="imageClick('italian_food')">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMbPBcH6aoHvfiKQOJqxTeXnIW4PbStI&libraries=places&callback=initMap"
         async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
