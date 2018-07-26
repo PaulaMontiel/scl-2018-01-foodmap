@@ -55,4 +55,8 @@ h3{
 }
 img{
     display: inline;
+    padding: 5px;
+}
+.container{
+    padding: 2em;
 }
