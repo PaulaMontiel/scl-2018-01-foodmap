@@ -16,11 +16,10 @@ h3{
     width: 100%;  /* The width is the width of the web page */
 }
 
-
 #custom-search-input {
     margin:0;
     margin-top: 10px;
-    padding: 0;
+    padding: 1em;
 }
 
 #custom-search-input .search-query {
@@ -54,9 +53,32 @@ h3{
     border-bottom-right-radius: 5px;
 }
 img{
-    display: inline;
-    padding: 5px;
+    float: none;
+    margin: 0 auto;
+}
+form{
+    padding: 1em;
+}
+.pd-row{
+    display: table;
+}
+h5{
+    text-align: center;
 }
 .container{
-    padding: 2em;
+    padding: 1em;
+}
+.img-p{
+    padding: 1em;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
 }
