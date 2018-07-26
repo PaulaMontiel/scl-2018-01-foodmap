@@ -1,6 +1,6 @@
 var map;
 var infowindow;
-const santiago = {lat: -33.447487, lng: -70.673676};
+const santiago = {lat: -33.418952, lng:  -70.641750};
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: santiago,
