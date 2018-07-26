@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/home.css">
-    <script src="assets/js/home.js" ></script>
-    
+    <script src="assets/js/home.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -22,8 +22,8 @@
             <div class="col-12 col-sm-12 col-md-12">
                 <h1>Foodmap</h1>
                 <ul class="reviews__content" id="reviews__content">
-                    </ul>
-                    <div id="map"></div>
+                </ul>
+                <div id="map"></div>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12">
                 <h3>Comida cerca de ti</h3>
-                <div class="input-group col-md-12">
+                <div class="input-group col-12 col-sm-12 col-md-12">
                     <input type="text" id="search" class="search-query form-control" placeholder="filtrar restaurantes" />
                     <button class="btn-b" type="button" onclick="searchRestaurant()">
                         <i class="fas fa-search"></i>
@@ -43,10 +43,31 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 botones">
+                <div class="col-6 col-sm-4 col-md-4">
+                    <button class="btn-b" type="button" onclick="searchRestaurant()">
+                        <img src="https://images.japancentre.com/page_elements/image1s/1513/original/sushi-bars-best-japanese-food.jpg?1470240553"
+                            alt="japanesefood" width="200px">
+                    </button>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4">
+                    <button>
+                        <img src="http://murphymonitor.com/wp-content/uploads/2018/06/Second.jpg" alt="fastfood" width="200px">
+                    </button>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4" >
+                    <button>
+                        <img src="" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMbPBcH6aoHvfiKQOJqxTeXnIW4PbStI&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMbPBcH6aoHvfiKQOJqxTeXnIW4PbStI&libraries=places&callback=initMap"
+        async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

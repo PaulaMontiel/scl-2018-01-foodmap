@@ -52,3 +52,9 @@ h3{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+img{
+    padding: none !important;
+}
+.botones{
+    display: inline;
+}
