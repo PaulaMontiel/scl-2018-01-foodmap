@@ -2,9 +2,11 @@ body{
     background-color: #2B2B2B;
     font-family: 'Roboto', sans-serif;
     color: 	#C47D2C;
+    width: 100%;
 }
 h1{
     text-align: center;
+    font-size: 10vw;
 }
 h3{
     text-align: center;
@@ -51,10 +53,4 @@ h3{
     background-color: #2B2B2B !important;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-img{
-    padding: none !important;
-}
-.botones{
-    display: inline;
 }

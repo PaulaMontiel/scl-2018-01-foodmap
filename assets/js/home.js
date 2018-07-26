@@ -52,3 +52,19 @@ function createMarker(place) {
         infowindow.open(map, this);
     });
 }
+function searchJapanese(){
+    const busqueda = document.getElementById('search').value;
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: santiago,
+        zoom: 13,
+    });
+
+    infowindow = new google.maps.InfoWindow();
+    const service = new google.maps.places.PlacesService(map);
+    service.nearbySearch({
+        location: santiago,
+        radius: 700,
+        types: ['restaurant', 'food'],
+        name: Japanese
+    }, callback);
+}
