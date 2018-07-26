@@ -52,9 +52,9 @@ function createMarker(place) {
         infowindow.open(map, this);
     });
 }
-function searchJapanese(){
-    const busqueda = document.getElementById('search').value;
-    map = new google.maps.Map(document.getElementById('map'), {
+function imageClick(id){
+	const imagen = id;
+	map = new google.maps.Map(document.getElementById('map'), {
         center: santiago,
         zoom: 13,
     });
@@ -65,6 +65,6 @@ function searchJapanese(){
         location: santiago,
         radius: 700,
         types: ['restaurant', 'food'],
-        name: Japanese
+        name: imagen
     }, callback);
 }
