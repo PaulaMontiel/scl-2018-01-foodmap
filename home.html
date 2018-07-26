@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="assets/js/home.js"></script>
+
+    <title>Inicio|Foodmap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Foodmap</h1>
+                <ul class="reviews__content" id="reviews__content">
+                </ul>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="maps"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>Comida cerca de ti</h3>
+                <div class="input-group col-12 col-sm-12 col-md-12 col-lg-12">
+                    <input type="text" id="search" class="search-query form-control" placeholder="filtrar restaurantes" />
+                    <button class="btn-b" type="button" onclick="searchRestaurant()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-6 col-sm-6 col-md-6">
+                    <img id ="sushi" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px" onclick="imageClick('sushi')">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="fast_food" src="assets/img/Second.jpg" alt="fastfood" width="200px" onclick="imageClick('fast_food')">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="mexican_food" src="assets/img/descarga.jpeg" alt="mexicanFood" width="200px" onclick="imageClick('mexican_food')">
+                </div>
+                <div class="col-6 col-sm-6col-md-6 col-lg-4">
+                    <img id ="vegetarian_food" src="assets/img/zi3000-shutterstock-buddha-bowl.jpg" alt="vegetarianFood" width="200px"onclick="imageClick('vegetarian_food')">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="italian_food" src="assets/img/images.jpeg" alt="italianFood" width="200px" onclick="imageClick('italian_food')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMbPBcH6aoHvfiKQOJqxTeXnIW4PbStI&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
