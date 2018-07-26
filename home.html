@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-12 col-md-12">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <h1>Foodmap</h1>
                 <ul class="reviews__content" id="reviews__content">
                 </ul>
@@ -32,9 +32,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <h3>Comida cerca de ti</h3>
-                <div class="input-group col-12 col-sm-12 col-md-12">
+                <div class="input-group col-12 col-sm-12 col-md-12 col-lg-12">
                     <input type="text" id="search" class="search-query form-control" placeholder="filtrar restaurantes" />
                     <button class="btn-b" type="button" onclick="searchRestaurant()">
                         <i class="fas fa-search"></i>
@@ -45,21 +45,21 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
-                <div>
-                    <img id ="japanese" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-6 col-sm-6 col-md-6">
+                    <img id ="japanese" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px" onclick="imageClick("japanese")">
                 </div>
-                <div>
-                    <img id ="fast" src="assets/img/Second.jpg" alt="fastfood" width="200px">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="fast" src="assets/img/Second.jpg" alt="fastfood" width="200px" onclick="imageClick("fast")">
                 </div>
-                <div>
-                    <img id ="mexican" src="assets/img/descarga.jpeg" alt="mexicanFood" width="200px">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="mexican" src="assets/img/descarga.jpeg" alt="mexicanFood" width="200px" onclick="imageClick("mexican")">
                 </div>
-                <div>
-                    <img id ="vegetarian" src="assets/img/zi3000-shutterstock-buddha-bowl.jpg" alt="vegetarianFood" width="200px">
+                <div class="col-6 col-sm-6col-md-6 col-lg-4">
+                    <img id ="vegetarian" src="assets/img/zi3000-shutterstock-buddha-bowl.jpg" alt="vegetarianFood" width="200px"onclick="imageClick("vegetarian")">
                 </div>
-                <div>
-                    <img id ="italian" src="assets/img/images.jpeg" alt="italianFood" width="200px">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <img id ="italian" src="assets/img/images.jpeg" alt="italianFood" width="200px" onclick="imageClick("italian")">
                 </div>
             </div>
         </div>
