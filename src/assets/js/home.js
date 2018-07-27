@@ -48,10 +48,16 @@ function createMarker(place) {
         position: place.geometry.location
     });
     google.maps.event.addListener(marker, 'click', function() {
-        infowindow.setContent(place.name);
-        infowindow.open(map, this);
+        //infowindow.setContent(place.name);
+        //infowindow.open(map, this);
+        document.getElementById('popup').setAttribute(
+            "style", "visibility:visible; opacity: 1;background-color: rgba(0,0,0,0.8); position: fixed; top:0; left:0; right:0; bottom:0; margin:0; z-index: 999; transition:all 1s;");
+
+        document.getElementById('tituloModal').innerHTML = place.name;
+        //document.getElementById('textoModal').innerHTML = place.opening_hours;
+        //document.getElementById().innerHTML = place.photo;
     });
-}
+} 
 function imageClick(id){
 	const imagen = id;
 	map = new google.maps.Map(document.getElementById('map'), {
@@ -67,4 +73,9 @@ function imageClick(id){
         types: ['restaurant', 'food'],
         name: imagen
     }, callback);
+}
+
+function cerrarModal(){
+    document.getElementById('popup').setAttribute(
+        "style", "visibility: hidden; margin-top: -300px;");
 }

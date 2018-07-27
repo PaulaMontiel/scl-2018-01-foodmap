@@ -5,6 +5,7 @@ body{
     width: 100%;
 }
 h1{
+    padding: 1.5em;
     text-align: center;
 }
 h3{
@@ -66,7 +67,8 @@ h5{
     text-align: center;
 }
 .container{
-    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .img-p{
     padding: 1em;
@@ -81,4 +83,24 @@ h5{
 .column {
     flex: 33.33%;
     padding: 5px;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #000;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
 }
