@@ -54,7 +54,9 @@ function createMarker(place) {
             "style", "visibility:visible; opacity: 1;background-color: rgba(0,0,0,0.8); position: fixed; top:0; left:0; right:0; bottom:0; margin:0; z-index: 999; transition:all 1s;");
 
         document.getElementById('tituloModal').innerHTML = place.name;
-        //document.getElementById('textoModal').innerHTML = place.opening_hours;
+        document.getElementById('textoModal').innerHTML = place.vicinity;
+        //mostrando contenido en la consola
+        //console.log(JSON.stringify(place));
         //document.getElementById().innerHTML = place.photo;
     });
 } 
