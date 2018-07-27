@@ -56,7 +56,7 @@ function createMarker(place) {
         document.getElementById('tituloModal').innerHTML = place.name;
         document.getElementById('textoModal').innerHTML = place.vicinity;
         //mostrando contenido en la consola
-        //console.log(JSON.stringify(place));
+        console.log(JSON.stringify(place));
         //document.getElementById().innerHTML = place.photo;
     });
 } 
