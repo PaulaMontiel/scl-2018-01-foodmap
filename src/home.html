@@ -29,7 +29,14 @@
             </div>
         </div>
         <div class="container">
-            <div id="maps"></div>
+            <div id="maps">
+                <div id="map"></div>
+                    <div id="right-panel">
+                        <h2>Results</h2>
+                        <ul id="places"></ul>
+                        <button id="more">More results</button>
+                    </div>
+            </div>
         </div>
     </header>
     <section>
@@ -48,7 +55,7 @@
         </div>
         <div class="row col-center text-center pd-row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-center">
-                <div>
+                <div >
                     <div class="column">
                         <h5>Sushi</h5>
                         <img id="sushi" src="assets/img/sushi-bars-best-japanese-food.jpg" alt="sushimeal" width="200px" onclick="imageClick('sushi')">
@@ -76,13 +83,14 @@
 
     <div class="modal-wrapper" id="popup">
         <div class="popup-contenedor">
+            <div id="imagen"></div>
             <h2 id="tituloModal"></h2>
             <p id="textoModal"></p>
             <a class="popup-cerrar" onClick="cerrarModal()" style="color:#fff;">X</a>
         </div>
     </div>
     <a href="#popup" class="popup-link">Ver mas información</a>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMbPBcH6aoHvfiKQOJqxTeXnIW4PbStI&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9ynILontKT5gTMLebF8-az5FCreYohCA&libraries=places&callback=initMap"
         async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
